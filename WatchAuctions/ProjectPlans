@@ -1,0 +1,10 @@
+Watch Notebooks
+
+1) Train NLP network to perform Image to Caption 
+  -> upload an image of a watch to generate an auction title and description
+  
+2) AutoEncoder for Unsupervised Learning
+  -> Train an AE network to generate feature mappings to perform clustering
+  
+3) Price Estimator
+  -> Regression model for estimated auction prices for a given watch image
