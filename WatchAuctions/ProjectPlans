@@ -1,10 +1,34 @@
 Watch Notebooks
 
-1) Train NLP network to perform Image to Caption 
+1) Data Pre-processing
+  -> Change currencies, update values for inflation, ...
+  -> Missing Data
+  -> Image cleanup
+
+2) Train NLP network to perform Image to Caption 
   -> upload an image of a watch to generate an auction title and description
   
-2) AutoEncoder for Unsupervised Learning
+3) AutoEncoder for Unsupervised Learning
   -> Train an AE network to generate feature mappings to perform clustering
   
-3) Price Estimator
+4) Price Estimator
   -> Regression model for estimated auction prices for a given watch image
+     # Input : Image - MODEL -> Output : Realised Price
+     # Input : Text(descripton) - MODEL -> Output : Realised Price
+     # Input : Image, Text(descripton) - MODEL -> Output : Realised Price
+     
+5) Region Comparison
+  -> Do similar watches sell for different prices based on their region? [see if the listed_currency
+          predicts whether it sells for more or less than the estimated prices]
+
+6) Value Projector
+  -> Is there enough data for the most popular watches sold at auction in order to do a future value estimator?
+        ; similar to stock price estimation
+        ; RNN, LSTM neural networks
+        
+7) Image Perspective - Classifier
+  -> Find the entries which have the most common image of the front of the watch facing forward on a white background
+  
+8) General Exploratory Data Analysis
+        
+ 
